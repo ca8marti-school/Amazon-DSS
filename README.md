@@ -2,4 +2,4 @@
 Made for a project in the Information Systems Analysis and Design course
 
 ## Table Creation
-The tables are short test data created for a demo that can be viewed here: 
+The tables are short test data created for a demo that can be viewed here: https://youtu.be/TkGqG-bQnao
