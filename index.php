@@ -10,7 +10,7 @@
 		<h1>Sign in to Amazon DSS</h1>
 
 		<div class="login">
-			<form action="comparison.php" method="GET">
+			<form action="productPicker.php" method="GET">
 				
 				<?php
 					// Enable error logging: 
@@ -21,20 +21,18 @@
 				?>
 
 				<?php
-					// SQL statement
+					// SQL statement to collect customer names and IDs
 					$sql = "SELECT c.customerID, c.customerName "
 						. "FROM customer c";
 						
-					// Prepared statement, stage 1: prepare
+					// Prepared statement
 					$stmt = $mysqli->prepare($sql);
-
-					// Prepared statement, stage 2: execute
 					$stmt->execute();
 
 					// Bind result variables 
 					$stmt->bind_result($customer_id, $customer_name); 
 
-					/* fetch values */ 
+					/* fetch values while creating sign-in layout */ 
 					echo '<label for="customerID">Pick Customer: </label>'; 
 					echo '<select name="customerID">'; 
 					while ($stmt->fetch()) 
