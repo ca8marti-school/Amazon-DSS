@@ -46,7 +46,7 @@ h1 {
 
 .column {
     float: left;
-    width: 50%;
+    width: 45%;
     padding: 10px;
 }
 
@@ -55,4 +55,25 @@ h1 {
     content: "";
     clear: both;
     display: table;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 5px solid black;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+th,td {
+    text-align: center;
+    padding: 16px;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
 }

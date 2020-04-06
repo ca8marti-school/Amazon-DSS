@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Product Picker</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -55,14 +55,14 @@
 					$stmt->execute();
 
 					// Bind result variables 
-					$stmt->bind_result($product_id, $product_name); 
+					$stmt->bind_result($product_id1, $product_name1); 
 
 					/* fetch values while creating sign-in layout */ 
 					echo '<label for="productID">Compare Products: </label>'; 
-					echo '<select name="productID">'; 
+					echo '<select name="productID1">'; 
 					while ($stmt->fetch()) 
 					{
-						printf ('<option value="%s">%s</option>', $product_id, $product_name); 
+						printf ('<option value="%s">%s</option>', $product_id1, $product_name1); 
 					}
 					echo '</select>'; 
                     
@@ -71,12 +71,12 @@
 					$stmt->execute();
 
 					// Bind result variables 
-                    $stmt->bind_result($product_id, $product_name); 
+                    $stmt->bind_result($product_id2, $product_name2); 
                     
-                    echo '<select name="productID">'; 
+                    echo '<select name="productID2">'; 
 					while ($stmt->fetch()) 
 					{
-						printf ('<option value="%s">%s</option>', $product_id, $product_name); 
+						printf ('<option value="%s">%s</option>', $product_id2, $product_name2); 
 					}
 					echo '</select><br>'; 
 					/* close statement*/ 
