@@ -37,7 +37,6 @@ CREATE TABLE search (
     PRIMARY KEY (customerID, productID),
     FOREIGN KEY (customerID) REFERENCES customer(customerID),
     FOREIGN KEY (productID) REFERENCES product(productID)
-    on UPDATE CASCADE 
 );
 
 CREATE TABLE supplier (
