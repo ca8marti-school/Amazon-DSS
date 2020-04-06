@@ -18,7 +18,7 @@ CREATE TABLE product (
     itemWeight float (2),
     itemDimensions VARCHAR(30),
     colour VARCHAR(10),
-    img VARCHAR(100)
+    img VARCHAR(100),
     PRIMARY KEY (productID)
 );
 
