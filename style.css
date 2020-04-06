@@ -1,0 +1,11 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    text-align: center;
+    margin: auto;
+}
