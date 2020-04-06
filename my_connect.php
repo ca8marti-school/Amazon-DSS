@@ -2,10 +2,11 @@
     // Function to obtain mysqli connection to the database.
     function get_mysqli_conn()
     {
-        $dbhost = '***REMOVED***';
-        $dbuser = '***REMOVED***';
-        $dbpassword = '***REMOVED***';
-        $dbname = '***REMOVED***';
+        //ensure that you change these to your own connection parameters
+        $dbhost = 'localhost';
+        $dbuser = 'username';
+        $dbpassword = 'password';
+        $dbname = 'username';
         $mysqli = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
     if ($mysqli->connect_errno) 
     {
